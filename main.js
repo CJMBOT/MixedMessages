@@ -7,18 +7,19 @@ function spiritAnimal() {
     //console.log(`The array "weakness" contains ${animals.length} items.`)
     //console.log(`The array "advice" contains ${animals.length} items.`)
     let anan = "";
-    let chosen = animals[Math.floor(Math.random()*animals.length)]
+    let chosen = animals[Math.floor(Math.random()*animals.length)];
     if (chosen[0] === "a" | chosen[0] === "e" | chosen[0] === "i" | chosen[0] === "o" | chosen[0] === "u") {
         anan = "an"
-    } else {anan = "a"}
-    let chosenAnimal = `${anan} ${chosen}`
-    chosen = strength[Math.floor(Math.random()*strength.length)]
-    let chosenStrength = `${anan} ${chosen}`
+    } else {anan = "a"};
+    let chosenAnimal = `${anan} ${chosen}`;
+    chosen = strength[Math.floor(Math.random()*strength.length)];
+    let chosenStrength = `${chosen}`;
     //chosen = weakness[Math.floor(Math.random()*weakness.length)]
     //let chosenWeakness = `${anan} ${chosen}`
     //chosen = advice[Math.floor(Math.random()*advice.length)]
     //let chosenAdvice = `${anan} ${chosen}`
-    console.log(chosenAnimal)
+    console.log(`A randomised animal could be ${chosenAnimal}.`);
+    console.log(`A randomised strength could be ${chosenStrength}.`);
     //console.log(`${anan} ${chosen}`)
 
 };
