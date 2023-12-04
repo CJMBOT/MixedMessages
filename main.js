@@ -10,6 +10,8 @@ function spiritAnimal() {
     console.log(`The array "weakness" contains ${weakness.length} items.`)
     console.log(`The array "advice" contains ${advice.length} items.`)
     console.log(`The array "funnyAdvice" contains ${funnyAdvice.length} items.`)
+    let combinations = animals.length * strength.length * weakness.length * (advice.length + funnyAdvice.length)
+    console.log(`There are a total of ${combinations} combinations.`)
     let anan = "";
     let chosen = animals[Math.floor(Math.random()*animals.length)];
     if (chosen[0] === "a" | chosen[0] === "e" | chosen[0] === "i" | chosen[0] === "o" | chosen[0] === "u") {
@@ -23,12 +25,12 @@ function spiritAnimal() {
     if (Math.random() < 0.75) {chosen = advice[Math.floor(Math.random()*advice.length)]}
         else {chosen = funnyAdvice[Math.floor(Math.random()*funnyAdvice.length)]}
     let chosenAdvice = `${chosen}`
-    console.log(`A randomised animal could be ${chosenAnimal}.`);
+    /*console.log(`A randomised animal could be ${chosenAnimal}.`);
     console.log(`A randomised strength could be ${chosenStrength}.`);
     console.log(`A randomised weakness could be ${chosenWeakness}.`);
-    console.log(`A randomised advice could be ${chosenAdvice}.`);
-   // console.log(`A randomised piece of advice could be ${chosenAdvice}.`);
-    //console.log(`${anan} ${chosen}`)
+    console.log(`A randomised advice could be ${chosenAdvice}.`);*/
+    console.log(`Hello! Today your spirit animal is ${chosenAnimal}. You get your strength from ${chosenStrength} but your weakness is ${chosenWeakness}.
+    Just remember: ${chosenAdvice}.`);
 
 };
 spiritAnimal();
