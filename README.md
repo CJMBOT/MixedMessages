@@ -1,7 +1,7 @@
 #Mixed Messages#
 ##Randomised spirit animal assignment and advice dispenser##
 
-##Table of contents##
+##Table of Contents##
 1. Description
 2. Features
 3. Setup and Use
