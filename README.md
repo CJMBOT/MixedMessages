@@ -8,8 +8,7 @@
 3. Setup and Use
 4. Technologies
 5. Status
-6. Inspiration
-7. Contact
+6. Contact
 
 ## Description ##
 This script was made for as a portfolio project in the Codecademy Full-Stack Engineer. All reviews and constructive criticism is welcome!
